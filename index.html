@@ -20,7 +20,9 @@
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <link href="aos-master/dist/aos.css" rel="stylesheet">
     <script src="aos-master/dist/aos.js"></script>
+    <link rel="stylesheet" href="css/mobile.css">
     <script src="js/menu.js"></script>
+
 </head>
 
 <body>
@@ -96,7 +98,7 @@
                 <div class="card" data-aos="fade-up">
                     <div class="row">
                         <div class="col-lg-6 col-md-12">
-                            <div class="card-body" >
+                            <div class="card-body">
                                 <div class="h4 mt-0 title text-color"> ABOUT </div>
                                 <p>Be a problem solver and passionate about programming, want to join a group of
                                     like-minded programmers. Looking for a suitable position at a company with highly
@@ -274,7 +276,8 @@
                                 <div class="col-md-6">
                                     <div class="project">
                                         <a href="">
-                                            <img src="image/project-3.jpg" alt="" style="height: 100%;" data-aos="fade-up">
+                                            <img src="image/project-3.jpg" alt="" style="height: 100%;"
+                                                data-aos="fade-up">
                                         </a>
                                         <div class="overplay"></div>
                                         <div class="project-1">
@@ -290,7 +293,8 @@
                                 <div class="col-md-6">
                                     <div class="project">
                                         <a href="">
-                                            <img src="image/project-2.jpg" alt="" style="height: 100%;" data-aos="fade-up">
+                                            <img src="image/project-2.jpg" alt="" style="height: 100%;"
+                                                data-aos="fade-up">
                                         </a>
                                         <div class="overplay"></div>
                                         <div class="project-1">
@@ -349,7 +353,7 @@
                                 <p>10/2021 - 01/2022</p>
                             </div>
                         </div>
-                        <div class="col-md-9"  data-aos="fade-left">
+                        <div class="col-md-9" data-aos="fade-left">
                             <div class="h5">
                                 Thực Tập Sinh SEO
                             </div>
@@ -364,7 +368,7 @@
                                 <p>10/2021 - 01/2022</p>
                             </div>
                         </div>
-                        <div class="col-md-9"  data-aos="fade-left">
+                        <div class="col-md-9" data-aos="fade-left">
                             <div class="h5">
                                 Thực Tập Sinh SEO
                             </div>
@@ -379,34 +383,36 @@
             <div class="container">
                 <div class="cc-contact">
                     <div class="row">
-                        <div class="col-md-9"  data-aos="zoom-in">
-                            <div class="card">
+                        <div class="col-md-9" data-aos="zoom-in">
+                            <div class="card contact-me">
                                 <div class="h4 text-center title">Contact Me</div>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="card-body">
-                                            <form action="https://formspree.io/f/xwkzolpk" method="post">
+                                            <form method="POST" action="https://formspree.io/f/xwkzolpk">
+                                                <!--  -->
                                                 <div class="p pb-3"><strong>Feel free to contact me </strong></div>
                                                 <div class="input-group mt-3">
-                                                    <input class="form-control" type="text" name="name"
+                                                    <input id="name" class="form-control" type="text" name="name"
                                                         placeholder="Name" required="required">
                                                 </div>
                                                 <div class="input-group mt-3">
-                                                    <input class="form-control" type="email" name="_replyto"
+                                                    <input id="email" class="form-control" type="email" name="email"
                                                         placeholder="E-mail" required="required">
                                                 </div>
                                                 <div class="input-group mt-3">
-                                                    <input class="form-control" type="text" name="Subject"
+                                                    <input id="subject" class="form-control" type="text" name="subject"
                                                         placeholder="Subject" required="required">
                                                 </div>
                                                 <div class="form-group mt-3">
-                                                    <textarea class="form-control" name="message"
+                                                    <textarea id="message" class="form-control" name="message"
                                                         placeholder="Your Message" required="required"></textarea>
                                                 </div>
 
                                                 <div class="row mt-3">
                                                     <div class="col">
-                                                        <button class="btn btn-primary" type="submit">Send</button>
+                                                        <button id="submit-btn" class="btn btn-primary"
+                                                            type="submit">Send</button>
                                                     </div>
                                                 </div>
                                             </form>
@@ -440,9 +446,12 @@
     <footer>
 
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/contactAPI.js"></script>
+    
 </body>
 <script>
     AOS.init();
-  </script>
+</script>
 
 </html>
